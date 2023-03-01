@@ -5,7 +5,7 @@ from game_recommendation import obtain_recommendation
 app = Flask(__name__)
 CORS(app)
 
-
+#API Integration
 @app.route('/recommendations')
 def recommendation():
     game_list = request.args.get('games')
